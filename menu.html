@@ -1,0 +1,1140 @@
+<!DOCTYPE html>    <html lang="en">    
+<head>    
+<meta charset="UTF-8">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Mohammed Musthafa M | Entrepreneur</title>    <!-- SEO -->    <meta name="description" content="Mohammed Musthafa M – Founder of Pixelmark, Cyber Security Analyst, Ethical Hacker & Digital Creator.">    
+<meta name="keywords" content="Pixelmark, Cyber Security, Ethical Hacker, Digital Creator, Portfolio">    <!-- Fonts & Animations -->    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">    
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    <style>    
+:root{    
+--bg:#0b1220;    
+--card:#020617;    
+--text:#e5e7eb;    
+--sub:#94a3b8;    
+--accent:#38bdf8;    
+}    
+body.light{    
+--bg:#f8fafc;    
+--card:#ffffff;    
+--text:#020617;    
+--sub:#475569;    
+--accent:#0284c7;    
+}    
+    
+*{margin:0;padding:0;box-sizing:border-box}    
+body{    
+font-family:'Poppins',sans-serif;    
+background:var(--bg);    
+color:var(--text);    
+transition:.3s;    
+}    
+    
+section{padding:90px 10%}    
+h1,h2,h3{font-weight:700}    
+h2{margin-bottom:30px}    
+a{text-decoration:none;color:var(--accent)}    
+    
+.btn{    
+padding:12px 30px;    
+border-radius:30px;    
+background:var(--accent);    
+color:#020617;    
+font-weight:600;    
+display:inline-block;    
+margin-top:20px;    
+}    
+    
+.grid{    
+display:grid;    
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));    
+gap:25px;    
+}    
+    
+.card{    
+background:var(--card);    
+padding:25px;    
+border-radius:18px;    
+box-shadow:0 10px 30px rgba(0,0,0,.35);    
+}    
+    
+/* HERO */    
+.hero{    
+min-height:100vh;    
+display:grid;    
+grid-template-columns:1.2fr 1fr;    
+align-items:center;    
+gap:50px;    
+}    
+.hero h1{    
+font-size:4.5rem;    
+font-weight:800;    
+line-height:1.1;    
+letter-spacing:-2px;    
+}    
+.hero h3{    
+font-size:1.3rem;    
+margin:15px 0;    
+font-weight:600;    
+}    
+.hero p{color:var(--sub);max-width:600px;font-size:1.05rem}    
+    
+.hero img{    
+width:100%;    
+max-width:360px;    
+background:transparent;    
+border:none;    
+filter: drop-shadow(0 0 20px rgba(56,189,248,0.6))     
+        drop-shadow(0 0 40px rgba(56,189,248,0.3));    
+}    
+    
+/* TOGGLE */    
+.toggle{    
+position:fixed;    
+top:20px;    
+right:20px;    
+cursor:pointer;    
+font-size:1.3rem;    
+z-index:100;    
+}    
+    
+/* EMAIL */    
+.wa{    
+position:fixed;    
+bottom:20px;    
+right:20px;    
+background:#8b0000;    
+color:#fff;    
+padding:14px 18px;    
+border-radius:50%;    
+font-size:22px;    
+z-index:100;    
+}    
+    
+/* INFINITE LOOP SKILLS - NO REVERSE */    
+.skills-container {    
+position: relative;    
+overflow: hidden;    
+margin: 50px 0;    
+padding: 30px 0;    
+}    
+.skills-track {    
+display: flex;    
+gap: 35px;    
+width: max-content;    
+animation: infiniteScroll 45s linear infinite;    
+}    
+.skills-track:hover {    
+animation-play-state: paused;    
+}    
+@keyframes infiniteScroll {    
+0% { transform: translateX(0); }    
+90% { transform: translateX(calc(-50%)); }    
+95% { transform: translateX(calc(-50%)); }    
+100% { transform: translateX(0); }    
+}    
+.skill-item {    
+flex: 0 0 auto;    
+width: 90px;    
+text-align: center;    
+transition:.3s;    
+cursor: pointer;    
+}    
+.skill-item:hover {    
+transform: translateY(-15px) scale(1.05);    
+}    
+.skill-icon-box {    
+width: 90px;    
+height: 90px;    
+background: var(--card);    
+border: 2px solid rgba(56,189,248,0.3);    
+border-radius: 20px;    
+display: flex;    
+align-items: center;    
+justify-content: center;    
+margin-bottom: 12px;    
+transition:.3s;    
+box-shadow: 0 8px 25px rgba(0,0,0,.4);    
+}    
+.skill-item:hover .skill-icon-box {    
+border-color: var(--accent);    
+box-shadow: 0 0 35px rgba(56,189,248,0.7);    
+}    
+.skill-icon-box img {    
+width: 50px;    
+height: 50px;    
+object-fit: contain;    
+}    
+.skill-name {    
+font-size: 0.85rem;    
+color: var(--text);    
+font-weight: 500;    
+line-height: 1.2;    
+}    
+    
+.skills-container {    
+overflow-x: auto;    
+scrollbar-width: none;    
+-ms-overflow-style: none;    
+}    
+.skills-container::-webkit-scrollbar {    
+display: none;    
+}    
+    
+@media(max-width:900px){    
+.hero h1{font-size:3rem}    
+.skill-item { width: 70px; }    
+.skill-icon-box { width: 70px; height: 70px; border-radius: 15px; }    
+.skill-icon-box img { width: 40px; height: 40px; }    
+.skill-name { font-size: 0.75rem; }    
+.skills-track { gap: 25px; animation-duration: 35s; }    
+}    
+    
+/* EDUCATION 3D ANIMATION - Holographic Rings */    
+.cyber {    
+position: relative;    
+overflow: hidden;    
+}    
+.cyber-holo {    
+position: absolute;    
+right: 5%;    
+top: 50%;    
+transform: translateY(-50%);    
+width: 200px;    
+height: 200px;    
+perspective: 800px;    
+opacity: 0.3;    
+pointer-events: none;    
+}    
+.holo-ring {    
+position: absolute;    
+width: 100%;    
+height: 100%;    
+border: 2px solid var(--accent);    
+border-radius: 50%;    
+animation: holoRotate 8s linear infinite;    
+}    
+.holo-ring:nth-child(2) {    
+width: 70%;    
+height: 70%;    
+top: 15%;    
+left: 15%;    
+animation-duration: 6s;    
+animation-direction: reverse;    
+border-color: rgba(56,189,248,0.6);    
+}    
+.holo-ring:nth-child(3) {    
+width: 40%;    
+height: 40%;    
+top: 30%;    
+left: 30%;    
+animation-duration: 4s;    
+}    
+@keyframes holoRotate {    
+0% { transform: rotateX(60deg) rotateZ(0deg); }    
+100% { transform: rotateX(60deg) rotateZ(360deg); }    
+}    
+.data-particle {    
+position: absolute;    
+width: 3px;    
+height: 3px;    
+background: var(--accent);    
+border-radius: 50%;    
+box-shadow: 0 0 10px var(--accent);    
+animation: floatParticle 3s ease-in-out infinite;    
+}    
+@keyframes floatParticle {    
+0%, 100% { transform: translateY(0) translateX(0); opacity: 0; }    
+50% { opacity: 1; }    
+}    
+    
+/* EDUCATION LIST */    
+.edu-list {    
+display: flex;    
+flex-direction: column;    
+gap: 28px;    
+position: relative;    
+z-index: 1;    
+}    
+.edu-item {    
+border-left: 2px solid var(--accent);    
+padding-left: 25px;    
+position: relative;    
+}    
+.edu-item::before {    
+content: '';    
+position: absolute;    
+left: -6px;    
+top: 5px;    
+width: 10px;    
+height: 10px;    
+background: var(--accent);    
+border-radius: 50%;    
+box-shadow: 0 0 15px var(--accent);    
+}    
+.edu-item h3 {    
+color: var(--text);    
+font-size: 1.1rem;    
+margin-bottom: 4px;    
+}    
+.edu-item .institute {    
+color: var(--accent);    
+font-weight: 600;    
+margin-bottom: 4px;    
+}    
+.edu-item .details {    
+color: var(--sub);    
+font-size: 0.95rem;    
+}    
+    
+/* EXPERIENCE 3D ANIMATION - Network Cube */    
+.timeline-wrapper {    
+position: relative;    
+}    
+.network-cube {    
+position: absolute;    
+right: 5%;    
+top: 20%;    
+width: 150px;    
+height: 150px;    
+transform-style: preserve-3d;    
+animation: cubeRotate 15s linear infinite;    
+opacity: 0.25;    
+pointer-events: none;    
+}    
+@keyframes cubeRotate {    
+0% { transform: rotateX(0) rotateY(0); }    
+100% { transform: rotateX(360deg) rotateY(360deg); }    
+}    
+.cube-face {    
+position: absolute;    
+width: 150px;    
+height: 150px;    
+border: 1px solid var(--accent);    
+background: rgba(56,189,248,0.05);    
+}    
+.cube-face:nth-child(1) { transform: translateZ(75px); }    
+.cube-face:nth-child(2) { transform: rotateY(180deg) translateZ(75px); }    
+.cube-face:nth-child(3) { transform: rotateY(90deg) translateZ(75px); }    
+.cube-face:nth-child(4) { transform: rotateY(-90deg) translateZ(75px); }    
+.cube-face:nth-child(5) { transform: rotateX(90deg) translateZ(75px); }    
+.cube-face:nth-child(6) { transform: rotateX(-90deg) translateZ(75px); }    
+.cube-node {    
+position: absolute;    
+width: 8px;    
+height: 8px;    
+background: var(--accent);    
+border-radius: 50%;    
+box-shadow: 0 0 15px var(--accent);    
+animation: nodePulse 2s ease-in-out infinite;    
+}    
+@keyframes nodePulse {    
+0%, 100% { transform: scale(1); opacity: 0.6; }    
+50% { transform: scale(1.5); opacity: 1; }    
+}    
+    
+/* TIMELINE */    
+.timeline{    
+border-left:3px solid var(--accent);    
+padding-left:30px;    
+position: relative;    
+z-index: 1;    
+}    
+.timeline-item{    
+margin-bottom:30px;    
+position: relative;    
+}    
+.timeline-item::before {    
+content: '';    
+position: absolute;    
+left: -36px;    
+top: 8px;    
+width: 12px;    
+height: 12px;    
+background: var(--accent);    
+border-radius: 50%;    
+box-shadow: 0 0 15px var(--accent);    
+}    
+.timeline-item h3 {    
+color: var(--text);    
+font-size: 1.1rem;    
+margin-bottom: 4px;    
+}    
+.timeline-item .company {    
+color: var(--accent);    
+font-weight: 600;    
+margin-bottom: 4px;    
+}    
+.timeline-item .location {    
+color: var(--sub);    
+font-size: 0.95rem;    
+}    
+    
+/* PROJECTS 3D ANIMATION - Glitch Card */    
+.projects-wrapper {    
+position: relative;    
+}    
+.grid {    
+position: relative;    
+z-index: 1;    
+}    
+.cyber-grid-bg {    
+position: absolute;    
+top: 0;    
+left: 0;    
+right: 0;    
+bottom: 0;    
+background-image:     
+  linear-gradient(rgba(56,189,248,0.03) 1px, transparent 1px),    
+  linear-gradient(90deg, rgba(56,189,248,0.03) 1px, transparent 1px);    
+background-size: 30px 30px;    
+animation: gridMove 20s linear infinite;    
+pointer-events: none;    
+}    
+@keyframes gridMove {    
+0% { background-position: 0 0; }    
+100% { background-position: 30px 30px; }    
+}    
+.scan-line {    
+position: absolute;    
+width: 100%;    
+height: 2px;    
+background: linear-gradient(90deg, transparent, var(--accent), transparent);    
+animation: scanMove 3s linear infinite;    
+opacity: 0.5;    
+pointer-events: none;    
+}    
+@keyframes scanMove {    
+0% { top: 0; }    
+100% { top: 100%; }    
+}    
+    
+.card{    
+background:var(--card);    
+padding:25px;    
+border-radius:18px;    
+box-shadow:0 10px 30px rgba(0,0,0,.35);    
+position: relative;    
+overflow: hidden;    
+transition: .3s;    
+}    
+.card::before {    
+content: '';    
+position: absolute;    
+top: -2px;    
+left: -2px;    
+right: -2px;    
+bottom: -2px;    
+background: linear-gradient(45deg, var(--accent), transparent, var(--accent));    
+border-radius: 18px;    
+z-index: -1;    
+opacity: 0;    
+transition: .3s;    
+}    
+.card:hover::before {    
+opacity: 1;    
+animation: borderGlow 2s linear infinite;    
+}    
+@keyframes borderGlow {    
+0%, 100% { opacity: 0.5; }    
+50% { opacity: 1; }    
+}    
+.card:hover {    
+transform: translateY(-5px);    
+}    
+    
+/* MODERN CONTACT SECTION - CLICKABLE CARDS WITH EXACT LOGOS */    
+.contact-grid {    
+display: grid;    
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));    
+gap: 25px;    
+margin-top: 40px;    
+}    
+.contact-card {    
+background: var(--card);    
+padding: 35px 25px;    
+border-radius: 20px;    
+border: 1px solid rgba(56,189,248,0.2);    
+text-align: center;    
+transition: .4s;    
+position: relative;    
+overflow: hidden;    
+cursor: pointer;    
+display: block;    
+text-decoration: none;    
+}    
+.contact-card::before {    
+content: '';    
+position: absolute;    
+top: -50%;    
+left: -50%;    
+width: 200%;    
+height: 200%;    
+background: radial-gradient(circle, rgba(56,189,248,0.1), transparent 70%);    
+opacity: 0;    
+transition: .4s;    
+}    
+.contact-card:hover::before {    
+opacity: 1;    
+}    
+.contact-card:hover {    
+transform: translateY(-8px);    
+border-color: var(--accent);    
+box-shadow: 0 15px 40px rgba(56,189,248,0.3);    
+}    
+/* Brand specific hovers */    
+.contact-card.instagram:hover {    
+box-shadow: 0 15px 40px rgba(225,48,108,0.4);    
+border-color: #E1306C;    
+}    
+.contact-card.linkedin:hover {    
+box-shadow: 0 15px 40px rgba(0,119,181,0.4);    
+border-color: #0077B5;    
+}    
+.contact-card.github:hover {    
+box-shadow: 0 15px 40px rgba(255,255,255,0.2);    
+border-color: #fff;    
+}    
+.contact-card.email:hover {    
+box-shadow: 0 15px 40px rgba(234,67,53,0.4);    
+border-color: #EA4335;    
+}    
+.contact-icon {    
+width: 60px;    
+height: 60px;    
+margin: 0 auto 15px;    
+background: rgba(56,189,248,0.1);    
+border-radius: 18px;    
+display: flex;    
+align-items: center;    
+justify-content: center;    
+transition: .3s;    
+}    
+.contact-card:hover .contact-icon {    
+transform: scale(1.15) rotate(5deg);    
+}    
+.contact-card.instagram:hover .contact-icon {    
+background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);    
+}    
+.contact-card.linkedin:hover .contact-icon {    
+background: #0077B5;    
+}    
+.contact-card.github:hover .contact-icon {    
+background: #fff;    
+}    
+.contact-card.email:hover .contact-icon {    
+background: #EA4335;    
+}    
+.contact-icon svg {    
+width: 32px;    
+height: 32px;    
+fill: var(--accent);    
+transition: .3s;    
+}    
+.contact-card:hover .contact-icon svg {    
+fill: #fff;    
+}    
+.contact-card.github:hover .contact-icon svg {    
+fill: #000;    
+}    
+.contact-card h3 {    
+font-size: 1.1rem;    
+margin-bottom: 8px;    
+color: var(--text);    
+}    
+.contact-card p {    
+font-size: 0.9rem;    
+color: var(--sub);    
+word-break: break-all;    
+}    
+    
+/* FOOTER */    
+footer{    
+text-align:center;    
+padding:40px;    
+background:var(--card);    
+color:var(--sub);    
+}    
+    
+/* ABOUT IMAGE FIX */    
+.about-img {    
+width:100%;    
+max-width:300px;    
+background:transparent;    
+border:none;    
+}    
+    
+@media(max-width:900px){    
+.hero{grid-template-columns:1fr;text-align:center}    
+.hero h1{font-size:3rem}    
+.hero img{margin:auto}    
+section{padding:70px 7%}    
+.cyber-holo, .network-cube { display: none; }    
+.contact-grid { grid-template-columns: 1fr; }    
+}    
+
+/* ================= MAIN MENU (Entrepreneurship / Pixelmark) ================= */
+.main-menu{
+position:fixed;
+top:20px;
+left:20px;
+z-index:200;
+}
+.menu-trigger{
+display:flex;
+align-items:center;
+gap:10px;
+background:var(--card);
+color:var(--text);
+border:1px solid rgba(56,189,248,0.3);
+padding:12px 18px;
+border-radius:30px;
+cursor:pointer;
+font-weight:600;
+font-size:0.95rem;
+box-shadow:0 8px 25px rgba(0,0,0,.4);
+transition:.3s;
+user-select:none;
+}
+.menu-trigger:hover{
+border-color:var(--accent);
+box-shadow:0 0 25px rgba(56,189,248,0.5);
+}
+.menu-trigger .bars{
+display:flex;
+flex-direction:column;
+gap:4px;
+}
+.menu-trigger .bars span{
+width:20px;
+height:2px;
+background:var(--accent);
+display:block;
+border-radius:2px;
+transition:.3s;
+}
+.main-menu.open .menu-trigger .bars span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.main-menu.open .menu-trigger .bars span:nth-child(2){opacity:0}
+.main-menu.open .menu-trigger .bars span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
+.menu-panel{
+position:absolute;
+top:calc(100% + 12px);
+left:0;
+min-width:240px;
+background:var(--card);
+border:1px solid rgba(56,189,248,0.25);
+border-radius:16px;
+box-shadow:0 15px 40px rgba(0,0,0,.5);
+padding:10px;
+opacity:0;
+transform:translateY(-10px);
+pointer-events:none;
+transition:.25s;
+}
+.main-menu.open .menu-panel{
+opacity:1;
+transform:translateY(0);
+pointer-events:auto;
+}
+.menu-item{
+position:relative;
+}
+.menu-item > .menu-item-label{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:10px;
+padding:12px 14px;
+border-radius:10px;
+color:var(--text);
+font-weight:600;
+font-size:0.95rem;
+cursor:pointer;
+transition:.2s;
+}
+.menu-item > .menu-item-label:hover{
+background:rgba(56,189,248,0.12);
+color:var(--accent);
+}
+.menu-item .menu-item-label .arrow{
+font-size:0.75rem;
+transition:.25s;
+color:var(--sub);
+}
+.menu-item.open > .menu-item-label .arrow{
+transform:rotate(90deg);
+color:var(--accent);
+}
+.submenu{
+max-height:0;
+overflow:hidden;
+transition:.3s ease;
+padding-left:10px;
+border-left:2px solid rgba(56,189,248,0.2);
+margin-left:14px;
+}
+.menu-item.open > .submenu{
+max-height:300px;
+}
+.submenu .menu-item-label{
+padding:10px 14px;
+font-size:0.9rem;
+font-weight:500;
+}
+.submenu-link{
+display:flex;
+align-items:center;
+gap:10px;
+padding:10px 14px;
+border-radius:10px;
+color:var(--text);
+font-weight:500;
+font-size:0.9rem;
+transition:.2s;
+}
+.submenu-link:hover{
+background:rgba(56,189,248,0.12);
+color:var(--accent);
+padding-left:18px;
+}
+.submenu-link .dot{
+width:8px;
+height:8px;
+border-radius:50%;
+background:#22c55e;
+box-shadow:0 0 10px #22c55e;
+flex-shrink:0;
+}
+@media(max-width:900px){
+.main-menu{top:14px;left:14px}
+.menu-trigger{padding:10px 14px}
+.menu-panel{min-width:210px}
+}
+/* ================= MOBILE-SPECIFIC OPTIMIZATIONS (Smartphones) ================= */
+@media (max-width: 500px) {
+  /* Prevent side padding from crushing content on tiny screens */
+  section {
+    padding: 50px 5%;
+  }
+
+  /* Scale down the massive heading font size so it doesn't break lines awkwardly */
+  .hero h1 {
+    font-size: 2.2rem;
+    letter-spacing: -1px;
+  }
+
+  /* Make sure the hero image scales down appropriately and keeps margins clean */
+  .hero img {
+    max-width: 260px;
+    margin-top: 20px;
+  }
+
+  /* Turn grids into a neat, clean single column layout */
+  .grid, .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  /* Realign floating UI triggers so they don't block content */
+  .toggle {
+    top: 15px;
+    right: 15px;
+  }
+  
+  .wa {
+    bottom: 15px;
+    right: 15px;
+    padding: 12px 16px;
+    font-size: 18px;
+  }
+
+  /* Adjust spacing for lists so the lines don't wrap too closely */
+  .edu-list, .timeline {
+    padding-left: 15px;
+  }
+  
+  .timeline-item::before {
+    left: -21px;
+  }
+}
+</style>    </head>    <body>    <!-- MAIN MENU -->
+<nav class="main-menu" id="mainMenu">
+  <div class="menu-trigger" onclick="toggleMainMenu()">
+    <div class="bars"><span></span><span></span><span></span></div>
+    Menu
+  </div>
+  <div class="menu-panel">
+    <div class="menu-item" id="entrepreneurItem">
+      <div class="menu-item-label" onclick="toggleSubmenu('entrepreneurItem')">
+        Business Venture
+        <span class="arrow">›</span>
+      </div>
+      <div class="submenu">
+        <a href="index.html" class="submenu-link">
+          <span class="dot"></span> Pixelmark
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="toggle" onclick="toggleTheme()">🌙</div>    
+    <!-- HERO -->    <section class="hero" data-aos="fade-up">    
+<div>    
+<h1><b>MOHAMMED MUSTHAFA M</b></h1>    
+<h3>Founder Of Pixelmark · Cyber Security Analyst · Ethical Hacker</h3>    
+<p>    
+Learning • Creating • Growing<br>    
+BCA Graduate with Hands-on Experience in Cyber Security, Ethical Hacking, Digital Marketing, and Business Operations.    
+</p>    
+<a href="MOHAMMED MUSTHAFA M.pdf" download class="btn">📄 Download CV</a>    
+</div>      <img src="MYWBG.png" alt="MOHAMMED MUSTHAFA M">    
+</section>    <!-- ABOUT -->    <section data-aos="fade-up">    
+<h2>About Me</h2>    
+<div class="grid">    
+<div>    
+<p>    
+A highly motivated and adaptable Bachelor of Computer Applications (BCA) graduate with a strong foundation in Cybersecurity, Ethical Hacking, IT support, and digital technologies, supported by hands-on internship experience and professional exposure across operations, administration, customer service, digital marketing, and client relationship management. Skilled in network security fundamentals, vulnerability assessment, Python programming, problem-solving, process coordination, and effective communication. Recognized for a strong work ethic, leadership, adaptability, and the ability to learn new technologies quickly while delivering results in fast-paced environments. Passionate about continuous professional development and committed to contributing analytical thinking, technical expertise, operational efficiency, and collaborative teamwork to drive organizational success across both IT and non-IT industries.    
+</p>    
+</div>    
+<img src="MYWBG.png" class="about-img" alt="Mohammed Musthafa M">    
+</div>    
+</section>    <!-- SKILLS -->    <section data-aos="fade-up">    
+<h2>Skills</h2>    
+<div class="skills-container" id="skillsContainer">    
+  <div class="skills-track" id="skillsTrack">    <!-- Set 1 -->    
+<div class="skill-item">    
+  <div class="skill-icon-box">    
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">    
+  </div>    
+  <div class="skill-name">HTML</div>    
+</div>    
+<div class="skill-item">    
+  <div class="skill-icon-box">    
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">    
+  </div>    
+  <div class="skill-name">Python</div>    
+</div>    
+<div class="skill-item">    
+  <div class="skill-icon-box">    
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">    
+  </div>    
+  <div class="skill-name">JavaScript</div>    
+</div>    
+<div class="skill-item">    
+  <div class="skill-icon-box">    
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android">    
+  </div>    
+  <div class="skill-name">Android</div>    
+</div>    
+<div class="skill-item">    
+  <div class="skill-icon-box">    
+    <img src="https://cdn-icons-png.flaticon.com/128/2082/2082812.png" alt="Networking">    
+  </div>    
+  <div class="skill-name">Networking & Security</div>    
+</div>    
+<div class="skill-item">    
+  <div class="skill-icon-box">    
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">    
+  </div>    
+  <div class="skill-name">Linux</div>    
+</div>    
+<div class="skill-item">    
+  <div class="skill-icon-box">    
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">    
+  </div>    
+  <div class="skill-name">SQL</div>    
+</div>    
+<div class="skill-item">    
+  <div class="skill-icon-box">    
+    <img src="https://cdn-icons-png.flaticon.com/128/13852/13852508.png" alt="Penetration">    
+  </div>    
+  <div class="skill-name">Penetration</div>    
+</div>    
+<div class="skill-item">    
+  <div class="skill-icon-box">    
+    <img src="https://cdn-icons-png.flaticon.com/512/2092/2092663.png" alt="SOC">    
+  </div>    
+  <div class="skill-name">SOC</div>    
+</div>    
+<div class="skill-item">    
+  <div class="skill-icon-box">    
+    <img src="https://nmap.org/images/nmap-logo-256x256.png" alt="Nmap">    
+  </div>    
+  <div class="skill-name">Nmap</div>    
+</div>    
+<div class="skill-item">    
+  <div class="skill-icon-box">    
+    <img src="https://cdn-icons-png.flaticon.com/128/888/888867.png" alt="MS Office">    
+  </div>    
+  <div class="skill-name">MS Office</div>    
+</div>    
+<div class="skill-item">    
+  <div class="skill-icon-box">    
+    <img src="https://cdn-icons-png.flaticon.com/512/2779/2779775.png" alt="Graphic Design">    
+  </div>    
+  <div class="skill-name">Graphic Design</div>    
+</div>    
+<div class="skill-item">    
+  <div class="skill-icon-box">    
+    <img src="https://cdn-icons-png.flaticon.com/512/3659/3659899.png" alt="Video Editing">    
+  </div>    
+  <div class="skill-name">Video Editing</div>    
+</div>    
+<div class="skill-item">    
+  <div class="skill-icon-box">    
+    <img src="https://cdn-icons-png.flaticon.com/128/10729/10729299.png" alt="Problem Solving">    
+  </div>    
+  <div class="skill-name">Problem Solving</div>    
+</div>    
+<div class="skill-item">    
+  <div class="skill-icon-box">    
+    <img src="https://cdn-icons-png.flaticon.com/128/4144/4144517.png" alt="Communication">    
+  </div>    
+  <div class="skill-name">Communication</div>    
+</div>    
+<div class="skill-item">    
+  <div class="skill-icon-box">    
+    <img src="https://cdn-icons-png.flaticon.com/128/6322/6322923.png" alt="Leadership">    
+  </div>    
+  <div class="skill-name">Leadership</div>    
+</div>    
+<div class="skill-item">    
+  <div class="skill-icon-box">    
+    <img src="https://cdn-icons-png.flaticon.com/512/2972/2972531.png" alt="Time Management">    
+  </div>    
+  <div class="skill-name">Time Management</div>    
+</div>    
+<div class="skill-item">    
+  <div class="skill-icon-box">    
+    <img src="https://cdn-icons-png.flaticon.com/512/1534/1534959.png" alt="Team Player">    
+  </div>    
+  <div class="skill-name">Team Player</div>    
+</div>    
+<div class="skill-item">    
+  <div class="skill-icon-box">    
+    <img src="https://cdn-icons-png.flaticon.com/128/12669/12669293.png" alt="Critical Thinking">    
+  </div>    
+  <div class="skill-name">Critical Thinking</div>    
+</div>    
+<div class="skill-item">    
+  <div class="skill-icon-box">    
+    <img src="https://cdn-icons-png.flaticon.com/128/11670/11670293.png" alt="Incident Command">    
+  </div>    
+  <div class="skill-name">Incident Command</div>    
+</div>    
+<div class="skill-item">    
+  <div class="skill-icon-box">    
+    <img src="https://cdn-icons-png.flaticon.com/512/1584/1584942.png" alt="Adaptability">    
+  </div>    
+  <div class="skill-name">Adaptability</div>    
+</div>    
+<div class="skill-item">    
+  <div class="skill-icon-box">    
+    <img src="https://cdn-icons-png.flaticon.com/128/11315/11315990.png" alt="Emotional Intelligence">    
+  </div>    
+  <div class="skill-name">Emotional Intelligence</div>    
+</div>
+
+</section>    <!-- EDUCATION -->    <section class="cyber" data-aos="zoom-in">    
+<h2>EDUCATION</h2>    
+<div class="cyber-holo">    
+  <div class="holo-ring"></div>    
+  <div class="holo-ring"></div>    
+  <div class="holo-ring"></div>    
+</div>    
+<div class="edu-list">      <div class="edu-item" data-aos="fade-right" data-aos-delay="100">    
+    <h3>Bachelor Of Computer Application</h3>    
+    <div class="institute">Safa College Of Arts & Science</div>    
+    <div class="details">2021 – 2024 | Pookkattiri, Kerala</div>    
+  </div>      <div class="edu-item" data-aos="fade-right" data-aos-delay="200">    
+    <h3>Certified Cyber Security Analyst</h3>    
+    <div class="institute">Red Team Hacker Academy</div>    
+    <div class="details">Kottakkal, Kerala</div>    
+  </div>      <div class="edu-item" data-aos="fade-right" data-aos-delay="300">    
+    <h3>Certified Ethical Hacking</h3>    
+    <div class="institute">Avodha Edu Tec</div>    
+    <div class="details">Kochi, Kerala</div>    
+  </div>      <div class="edu-item" data-aos="fade-right" data-aos-delay="400">    
+    <h3>Python & Flutter</h3>    
+    <div class="institute">Regional Technology</div>    
+    <div class="details">Calicut, Kerala</div>    
+  </div>      <div class="edu-item" data-aos="fade-right" data-aos-delay="500">    
+    <h3>Educational Prompt Engineering</h3>    
+    <div class="institute">Talim</div>    
+  </div>      <div class="edu-item" data-aos="fade-right" data-aos-delay="600">    
+    <h3>Data Science Mastery: Journey into Machine Learning</h3>    
+    <div class="institute">Udemy</div>    
+  </div>      <div class="edu-item" data-aos="fade-right" data-aos-delay="700">    
+    <h3>Introduction To Data Engineering & Big Data</h3>    
+    <div class="institute">GUVI Skill up, Level up</div>    
+  </div>    </div>    
+</section>    
+<!-- PROFESSIONAL EXPERIENCE -->    
+<section data-aos="fade-up" class="timeline-wrapper">    
+<h2>Professional Experience</h2>    
+<div class="network-cube">    
+  <div class="cube-face">    
+    <div class="cube-node" style="top:20%;left:20%"></div>    
+    <div class="cube-node" style="top:70%;left:80%"></div>    
+  </div>    
+  <div class="cube-face">    
+    <div class="cube-node" style="top:50%;left:50%"></div>    
+  </div>    
+  <div class="cube-face">    
+    <div class="cube-node" style="top:30%;left:60%"></div>    
+    <div class="cube-node" style="top:80%;left:30%"></div>    
+  </div>    
+  <div class="cube-face"></div>    
+  <div class="cube-face">    
+    <div class="cube-node" style="top:40%;left:40%"></div>    
+  </div>    
+  <div class="cube-face">    
+    <div class="cube-node" style="top:60%;left:70%"></div>    
+  </div>    
+</div>    
+<div class="timeline">    
+  <div class="timeline-item">    
+    <h3>Operations Coordinator</h3>    
+    <div class="company">Bhoomika - HKS</div>    
+    <div class="location">Valanchery, Kerala</div>    
+  </div>    
+  <div class="timeline-item">    
+    <h3>Document Controller</h3>    
+    <div class="company">Waynex Businessman Services LLC</div>    
+    <div class="location">Abu Dhabi, UAE (Remote)</div>    
+  </div>    
+  <div class="timeline-item">    
+    <h3>Document Controller</h3>    
+    <div class="company">Alif Typing & Travels</div>    
+    <div class="location">Abu Dhabi, UAE (Remote)</div>    
+  </div>    
+  <div class="timeline-item">    
+    <h3>Cyber Security & Ethical Hacking (Internship)</h3>    
+    <div class="company">Vault Of Codes</div>    
+    <div class="location">Remote</div>    
+  </div>    
+  <div class="timeline-item">    
+    <h3>Cyber Security Analyst (Internship)</h3>    
+    <div class="company">TATA Forage</div>    
+    <div class="location">Remote</div>    
+  </div>    
+  <div class="timeline-item">    
+    <h3>Office Administrator</h3>    
+    <div class="company">Head Office Of Image Mobiles & Computers</div>    
+    <div class="location">Perinthalmanna, Kerala</div>    
+  </div>    
+</div>    
+</section>    <!-- PROJECTS -->    <section data-aos="fade-up" class="projects-wrapper">    
+<div class="cyber-grid-bg"></div>    
+<div class="scan-line"></div>    
+<h2>Projects</h2>    
+<div class="grid">    
+<div class="card">    
+<h3>SnapShopy</h3>    
+<p>This project built a bridge for better shopping and connection between customers and nearby shops.</p>    
+</div>    
+</section>    <!-- CONTACT -->    <section data-aos="fade-up">    
+<h2>Contact</h2>    
+<div class="contact-grid">      <a href="mailto:musthafamohammed6273@gmail.com" class="contact-card email" data-aos="zoom-in" data-aos-delay="100">    
+    <div class="contact-icon">    
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>    
+    </div>    
+    <h3>Email</h3>    
+    <p>musthafamohammed6273@gmail.com</p>    
+  </a>      <a href="https://linkedin.com/in/mohammed-musthafa-m" target="_blank" class="contact-card linkedin" data-aos="zoom-in" data-aos-delay="200">    
+    <div class="contact-icon">    
+      <svg viewBox="0 0 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>    
+    </div>    
+    <h3>LinkedIn</h3>    
+    <p>mohammed-musthafa-m</p>    
+  </a>      <a href="https://github.com/MOHAMMED-MUSTHAFA-M" target="_blank" class="contact-card github" data-aos="zoom-in" data-aos-delay="300">    
+    <div class="contact-icon">    
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>    
+    </div>    
+    <h3>GitHub</h3>    
+    <p>MOHAMMED-MUSTHAFA-M</p>    
+  </a>      <a href="https://instagram.com/_mhd_musthafa_10_" target="_blank" class="contact-card instagram" data-aos="zoom-in" data-aos-delay="400">    
+    <div class="contact-icon">    
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>    
+    </div>    
+    <h3>Instagram</h3>    
+    <p>@_mhd_musthafa_10_</p>    
+  </a>    </div>    
+</section>    <footer>© 2026 Mohammed Musthafa M</footer>    <script>    
+AOS.init({duration:1000,once:true});    
+function toggleTheme(){document.body.classList.toggle('light')}    
+    
+// INFINITE SCROLL WITH MANUAL DRAG SUPPORT    
+const skillsContainer = document.getElementById('skillsContainer');    
+const skillsTrack = document.getElementById('skillsTrack');    
+    
+let isDown = false;    
+let startX;    
+let scrollLeft;    
+    
+// Mouse drag scroll    
+skillsContainer.addEventListener('mousedown', (e) => {    
+  isDown = true;    
+  skillsTrack.style.animationPlayState = 'paused';    
+  startX = e.pageX - skillsContainer.offsetLeft;    
+  scrollLeft = skillsContainer.scrollLeft;    
+});    
+    
+skillsContainer.addEventListener('mouseleave', () => {    
+  isDown = false;    
+  skillsTrack.style.animationPlayState = 'running';    
+});    
+    
+skillsContainer.addEventListener('mouseup', () => {    
+  isDown = false;    
+  setTimeout(() => {    
+    skillsTrack.style.animationPlayState = 'running';    
+  }, 2000);    
+});    
+    
+skillsContainer.addEventListener('mousemove', (e) => {    
+  if(!isDown) return;    
+  e.preventDefault();    
+  const x = e.pageX - skillsContainer.offsetLeft;    
+  const walk = (x - startX) * 2;    
+  skillsContainer.scrollLeft = scrollLeft - walk;    
+});    
+    
+// Touch support for laptop trackpad    
+skillsContainer.addEventListener('touchstart', () => {    
+  skillsTrack.style.animationPlayState = 'paused';    
+});    
+    
+skillsContainer.addEventListener('touchend', () => {    
+  setTimeout(() => {    
+    skillsTrack.style.animationPlayState = 'running';    
+  }, 2000);    
+});    
+    
+// Create floating particles for Education    
+const cyberSection = document.querySelector('.cyber');    
+if(cyberSection) {    
+  for(let i = 0; i < 15; i++) {    
+    const particle = document.createElement('div');    
+    particle.className = 'data-particle';    
+    particle.style.left = Math.random() * 100 + '%';    
+    particle.style.top = Math.random() * 100 + '%';    
+    particle.style.animationDelay = Math.random() * 3 + 's';    
+    cyberSection.querySelector('.cyber-holo').appendChild(particle);    
+  }    
+}    
+
+// MAIN MENU LOGIC
+function toggleMainMenu(){
+  document.getElementById('mainMenu').classList.toggle('open');
+}
+function toggleSubmenu(id){
+  document.getElementById(id).classList.toggle('open');
+}
+document.addEventListener('click', function(e){
+  const menu = document.getElementById('mainMenu');
+  if(menu && !menu.contains(e.target)){
+    menu.classList.remove('open');
+  }
+});
+</script>    </body>    
+</html>
