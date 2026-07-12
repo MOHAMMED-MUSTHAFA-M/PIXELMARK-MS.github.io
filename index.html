@@ -144,14 +144,15 @@ filter: drop-shadow(0 0 35px rgba(0, 255, 135, 0.4));
 }
 
 .logo-img {
-width: 100%;
-height: auto;
-display: block;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Ensures the image centers inside the container */
 }
 
-@keyframes logoFloat{
-0%,100%{transform:translateY(0) scale(1)}
-50%{transform:translateY(-12px) scale(1.02)}
+@keyframes logoFloat {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(0, -12px, 0) scale(1.02); }
 }
 
 .hero h1{
@@ -545,7 +546,7 @@ section{padding:70px 6%}
 <!-- HERO (Premium custom reveal) -->
 <section class="hero" data-aos="fade-zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="1200">
   <div class="logo-container">
-    <img src="PIXELMARK.png" alt="PIXELMARK Logo" class="logo-img">
+    <img src="PIXELMARKprime.png" alt="PIXELMARK Logo" class="logo-img">
   </div>
   <h1>PIXELMARK</h1>
   <h3>We Assist Your Dreams</h3>
@@ -691,6 +692,12 @@ section{padding:70px 6%}
         <svg viewBox="0 0 24 24"><path d="M20 7h-5V4c0-1.1-.9-2-2-2h-2c-1.1 0-2 .9-2 2v3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zM11 4h2v3h-2V4zm9 16H4V9h16v11z"/></svg>
       </div>
       <h3>Data Entry Services</h3>
+    </div>
+    <div class="card service-card" data-aos="fade-up" data-aos-delay="350">
+      <div class="service-icon-wrapper">
+        <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+      </div>
+      <h3>Professional CV/Ressume Making</h3>
     </div>
   </div>
 </section>
